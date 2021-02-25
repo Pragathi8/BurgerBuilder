@@ -19,7 +19,8 @@ const ContactData = props => {
       },
       value: "",
       validation: {
-        required: true
+        required: true,
+        validationText: 'A name is required'
       },
       valid: false,
       touched: false
@@ -32,7 +33,8 @@ const ContactData = props => {
       },
       value: "",
       validation: {
-        required: true
+        required: true,
+        validationText: 'A street is required'
       },
       valid: false,
       touched: false
@@ -47,7 +49,8 @@ const ContactData = props => {
       validation: {
         required: true,
         minLength: 5,
-        maxLength: 5
+        maxLength: 5,
+        validationText: 'A Zipcode is required and must be 5 characters'
       },
       valid: false,
       touched: false
@@ -60,7 +63,8 @@ const ContactData = props => {
       },
       value: "",
       validation: {
-        required: true
+        required: true,
+        validationText: 'A Country is required'
       },
       valid: false,
       touched: false
@@ -73,7 +77,9 @@ const ContactData = props => {
       },
       value: "",
       validation: {
-        required: true
+        required: true,
+        isEmail: true,
+        validationText: 'A valid email is required'
       },
       valid: false,
       touched: false
